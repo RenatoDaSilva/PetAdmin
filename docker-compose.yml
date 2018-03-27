@@ -26,7 +26,6 @@ services:
     volumes_from:
       - box
 
-
   app:
     depends_on:
       - 'postgres'
@@ -46,7 +45,7 @@ services:
       - /box
 
   mailcatcher:
-    image: yappabe/mailcatcher
+    image: tophfr/mailcatcher
     ports:
       - 1025:1025
       - 1080:1080
