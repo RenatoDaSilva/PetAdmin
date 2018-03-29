@@ -47,8 +47,8 @@ services:
   mailcatcher:
     image: tophfr/mailcatcher
     ports:
-      - 1025:1025
-      - 1080:1080
+      - 1025:25
+      - 1080:80
 
 volumes:
   redis:
