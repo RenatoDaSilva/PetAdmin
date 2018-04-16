@@ -1,3 +1,5 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
 
   namespace :admin do
@@ -12,5 +14,5 @@ Rails.application.routes.draw do
   # mount Fae below your admin namespec
   mount Fae::Engine => '/admin'
 
-  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 end
